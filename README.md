@@ -6,8 +6,7 @@ There are 2 components:
 2. Device handler for Samsung Smartthings platform
 
 Keyboard application is ready (precompiled) in the release-apk folder.
-You can also download it directly from Google Play Store at: https://play.google.com/store/apps/details?id=org.liskovsoft.leankeykeyboard.pro
-
+You can also download it directly from Google Play Store at: https://play.google.com/store/apps/details?id=com.aktuna.tv.keyboard
 Device handler is available as groovy source code in the device-handler folder.
 
 The keyboard application can be used also for other platforms or directly commanding Android TV from network (http)
