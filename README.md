@@ -11,6 +11,9 @@ Device handler is available as groovy source code in the device-handler folder.
 
 The keyboard application can be used also for other platforms or directly commanding Android TV from network (http)
 
+This app is also working (90% functions) on Amazon Fire TV.
+(See Amazon TV install instructions below.)
+
 Usage for Smartthings:
 1. install this keyboard on your Android TV and select it as the active keyboard from settings. (input/keyboard)
 2. create a device handler on your Smartthings platform with the groovy code from my github repository.
@@ -42,3 +45,20 @@ Supported Commands:
 /playpause
 /previous
 /next
+
+Amazon TV apk install instructions:
+1. download the apk file from "release-apk" folder
+2. enable adb interface on your Amazon TV device
+3. connect to Amazon TV via ADB:
+"adb connect 192.168.1.134:5555"
+4. install apk:
+"adb install /path/to/LeanKeyKeyboardPro_v1.0_r.apk"
+5. list available keyboards:
+"adb shell ime list -a"
+6. select and enable my keyboard app:
+"adb shell ime enable com.aktuna.tv.keyboard/com.aktuna.leanback.ime.LeanbackImeService"
+7. set my keyboard as default keyboard:
+"adb shell ime set com.aktuna.tv.keyboard/com.aktuna.leanback.ime.LeanbackImeService"
+*. To revert back to original keyboard:
+"adb shell ime set com.amazon.tv.ime/.FireTVIME"
+
