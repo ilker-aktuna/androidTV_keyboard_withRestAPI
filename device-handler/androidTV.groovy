@@ -4,37 +4,37 @@ metadata {
 		capability "Actuator"
 		capability "Sensor"
 		capability "Switch"
-        capability "refresh"
-        capability "polling"
+        	capability "refresh"
+        	capability "polling"
 
 		attribute "ip", "string"
 		attribute "port", "string"
-        attribute "state", "string"
+        	attribute "state", "string"
 		command "up"
 		command "down"
 		command "update"
-		command "youtube"
-		command "puhu"
-		command "plex"
-		command "power"
-		command "sleep"
-		command "home"
-		command "back"
-		command "search"
-		command "upx"
-		command "downx"
-		command "left"
-		command "right"
-		command "center"
-		command "volumeup"
-		command "volumedown"
-		command "rewind"
-		command "ff"
-		command "playpause"
-		command "previous"
-		command "next"
-		command "getstatus"
-		command "refresh"
+command "youtube"
+command "puhu"
+command "plex"
+command "power"
+command "sleep"
+command "home"
+command "back"
+command "search"
+command "upx"
+command "downx"
+command "left"
+command "right"
+command "center"
+command "volumeup"
+command "volumedown"
+command "rewind"
+command "ff"
+command "playpause"
+command "previous"
+command "next"
+command "getstatus"
+command "refresh"
 
 	}
     preferences {
@@ -63,21 +63,21 @@ metadata {
 		}
 
 standardTile("youtube", "device.image", width: 1, height: 1, canChangeIcon: false,  canChangeBackground: false, decoration: "flat") { 
- state "", label: "youtube", action: "youtube", icon: "" }
+ state "", label: "youtube", action: "youtube", icon: "https://github.com/ilker-aktuna/androidTV_keyboard_withRestAPI/raw/master/icons/youtube.png" }
 standardTile("home", "device.image", width: 1, height: 1, canChangeIcon: false,  canChangeBackground: false, decoration: "flat") { 
- state "", label: "home", action: "home", icon: "" }
+ state "", label: "home", action: "home", icon: "http://cdn.device-icons.smartthings.com/Home/home2-icn@2x.png" }
 standardTile("puhu", "device.image", width: 1, height: 1, canChangeIcon: false,  canChangeBackground: false, decoration: "flat") { 
- state "", label: "puhu", action: "puhu", icon: "" }
+ state "", label: "puhu", action: "puhu", icon: "https://github.com/ilker-aktuna/androidTV_keyboard_withRestAPI/raw/master/icons/puhu.png" }
 standardTile("plex", "device.image", width: 1, height: 1, canChangeIcon: false,  canChangeBackground: false, decoration: "flat") { 
- state "", label: "plex", action: "plex", icon: "" }
+ state "", label: "plex", action: "plex", icon: "https://github.com/ilker-aktuna/androidTV_keyboard_withRestAPI/raw/master/icons/plex.png" }
 standardTile("power", "device.image", width: 1, height: 1, canChangeIcon: false,  canChangeBackground: false, decoration: "flat") { 
- state "", label: "power", action: "power", icon: "" }
+ state "", label: "power", action: "power", icon: "https://github.com/ilker-aktuna/androidTV_keyboard_withRestAPI/raw/master/icons/power.png" }
 standardTile("sleep", "device.image", width: 1, height: 1, canChangeIcon: false,  canChangeBackground: false, decoration: "flat") { 
  state "", label: "sleep", action: "sleep", icon: "" }
 standardTile("back", "device.image", width: 1, height: 1, canChangeIcon: false,  canChangeBackground: false, decoration: "flat") { 
- state "", label: "back", action: "back", icon: "" }
+ state "", label: "back", action: "back", icon: "https://github.com/ilker-aktuna/androidTV_keyboard_withRestAPI/raw/master/icons/back.png" }
 standardTile("search", "device.image", width: 1, height: 1, canChangeIcon: false,  canChangeBackground: false, decoration: "flat") { 
- state "", label: "search", action: "search", icon: "" }
+ state "", label: "search", action: "search", icon: "https://github.com/ilker-aktuna/androidTV_keyboard_withRestAPI/raw/master/icons/search.png" }
  /*
 standardTile("upx", "device.image", width: 1, height: 1, canChangeIcon: false,  canChangeBackground: false, decoration: "flat") { 
  state "", label: "upx", action: "upx", icon: "" }
@@ -91,9 +91,9 @@ standardTile("center", "device.image", width: 1, height: 1, canChangeIcon: false
  state "", label: "center", action: "center", icon: "" }
  */
 standardTile("volumeup", "device.image", width: 1, height: 1, canChangeIcon: false,  canChangeBackground: false, decoration: "flat") { 
- state "", label: "volume", action: "volumeup", icon: "http://smartthings.rboyapps.com/images/arrowTop.png" }
+ state "", label: "volume", action: "volumeup", icon: "http://cdn.device-icons.smartthings.com/thermostat/thermostat-up@2x.png" }
 standardTile("volumedown", "device.image", width: 1, height: 1, canChangeIcon: false,  canChangeBackground: false, decoration: "flat") { 
- state "", label: "volume", action: "volumedown", icon: "http://smartthings.rboyapps.com/images/arrowBottom.png" }
+ state "", label: "volume", action: "volumedown", icon: "http://cdn.device-icons.smartthings.com/thermostat/thermostat-down@2x.png" }
 standardTile("rewind", "device.image", width: 1, height: 1, canChangeIcon: false,  canChangeBackground: false, decoration: "flat") { 
  state "", label: "REW", action: "rewind", icon:"st.sonos.previous-btn" }
 standardTile("ff", "device.image", width: 1, height: 1, canChangeIcon: false,  canChangeBackground: false, decoration: "flat") { 
@@ -106,19 +106,19 @@ standardTile("next", "device.image", width: 1, height: 1, canChangeIcon: false, 
  state "", label: "", action: "next", icon:"st.sonos.next-btn" }
  
 		standardTile("left", "device.image", width: 1, height: 1, canChangeIcon: false,  canChangeBackground: false, decoration: "flat") {
-			state "default", label: "", action: "left", icon: "http://smartthings.rboyapps.com/images/arrowLeft.png", defaultState: true
+			state "default", label: "", action: "left", icon: "http://cdn.device-icons.smartthings.com/thermostat/thermostat-left@2x.png", defaultState: true
 		}
 
 		standardTile("right", "device.image", width: 1, height: 1, canChangeIcon: false,  canChangeBackground: false, decoration: "flat") {
-			state "default", label: "", action: "right", icon: "http://smartthings.rboyapps.com/images/arrowRight.png", defaultState: true
+			state "default", label: "", action: "right", icon: "http://cdn.device-icons.smartthings.com/thermostat/thermostat-right@2x.png", defaultState: true
 		}
 
 		standardTile("up", "device.image", width: 1, height: 1, canChangeIcon: false, canChangeBackground: false, decoration: "flat") {
-			state "default", label: "", action: "upx", icon: "http://smartthings.rboyapps.com/images/arrowTop.png", defaultState: true
+			state "default", label: "", action: "upx", icon: "http://cdn.device-icons.smartthings.com/thermostat/thermostat-up@2x.png", defaultState: true
 		}
 
 		standardTile("down", "device.image", width: 1, height: 1, canChangeIcon: false, canChangeBackground: false, decoration: "flat") {
-			state "default", label: "", action: "downx", icon: "http://smartthings.rboyapps.com/images/arrowBottom.png", defaultState: true
+			state "default", label: "", action: "downx", icon: "http://cdn.device-icons.smartthings.com/thermostat/thermostat-down@2x.png", defaultState: true
 		}
 
 		standardTile("center", "device.image", width: 1, height: 1, canChangeIcon: false,  canChangeBackground: false, decoration: "flat") {
@@ -198,6 +198,8 @@ def setstatus() {
 		state.statx="off"
 	}
     if (state.statx != state.statxold) {
+    	//log.debug "old state: ${state.statxold}"
+        //log.debug "new state: ${state.statx}"
     	state.statxold=state.statx
     	sendEvent(name: "state", value: state.statx, isStateChange: true)
         if ( state.statx != "off" ) {
@@ -256,6 +258,7 @@ def getstatus() {
     catch (Exception e) {
         log.debug "Hit Exception $e on $hubAction"
     }
+    state.statxara="none"
     startTimer(2)
 }
 
@@ -278,6 +281,7 @@ def youtube() {
     catch (Exception e) {
         log.debug "Hit Exception $e on $hubAction"
     }
+    state.statxara="none"
     startTimer(2)
 }
 def home() {
@@ -299,6 +303,7 @@ def home() {
     catch (Exception e) {
         log.debug "Hit Exception $e on $hubAction"
     }
+    state.statxara="none"
     startTimer(2)
 }
 def puhu() {
@@ -320,6 +325,7 @@ def puhu() {
     catch (Exception e) {
         log.debug "Hit Exception $e on $hubAction"
     }
+    state.statxara="none"
     startTimer(2)
 }
 def plex() {
@@ -341,6 +347,7 @@ def plex() {
     catch (Exception e) {
         log.debug "Hit Exception $e on $hubAction"
     }
+    state.statxara="none"
     startTimer(2)
 }
 def power() {
@@ -362,6 +369,7 @@ def power() {
     catch (Exception e) {
         log.debug "Hit Exception $e on $hubAction"
     }
+    state.statxara="none"
     startTimer(2)
 }
 def sleep() {
@@ -383,6 +391,7 @@ def sleep() {
     catch (Exception e) {
         log.debug "Hit Exception $e on $hubAction"
     }
+    state.statxara="none"
     startTimer(2)
 }
 
@@ -405,6 +414,7 @@ def back() {
     catch (Exception e) {
         log.debug "Hit Exception $e on $hubAction"
     }
+    state.statxara="none"
     startTimer(2)
 }
 def search() {
@@ -426,6 +436,7 @@ def search() {
     catch (Exception e) {
         log.debug "Hit Exception $e on $hubAction"
     }
+    state.statxara="none"
     startTimer(2)
 }
 def upx() {
@@ -447,6 +458,7 @@ def upx() {
     catch (Exception e) {
         log.debug "Hit Exception $e on $hubAction"
     }
+    state.statxara="none"
     startTimer(2)
 }
 def downx() {
@@ -468,6 +480,7 @@ def downx() {
     catch (Exception e) {
         log.debug "Hit Exception $e on $hubAction"
     }
+    state.statxara="none"
     startTimer(2)
 }
 def left() {
@@ -489,6 +502,7 @@ def left() {
     catch (Exception e) {
         log.debug "Hit Exception $e on $hubAction"
     }
+    state.statxara="none"
     startTimer(2)
 }
 def right() {
@@ -510,6 +524,7 @@ def right() {
     catch (Exception e) {
         log.debug "Hit Exception $e on $hubAction"
     }
+    state.statxara="none"
     startTimer(2)
 }
 def center() {
@@ -531,6 +546,7 @@ def center() {
     catch (Exception e) {
         log.debug "Hit Exception $e on $hubAction"
     }
+    state.statxara="none"
     startTimer(2)
 }
 def volumeup() {
@@ -552,6 +568,7 @@ def volumeup() {
     catch (Exception e) {
         log.debug "Hit Exception $e on $hubAction"
     }
+    state.statxara="none"
     startTimer(2)
 }
 def volumedown() {
@@ -573,6 +590,7 @@ def volumedown() {
     catch (Exception e) {
         log.debug "Hit Exception $e on $hubAction"
     }
+    state.statxara="none"
     startTimer(2)
 }
 def rewind() {
@@ -594,6 +612,7 @@ def rewind() {
     catch (Exception e) {
         log.debug "Hit Exception $e on $hubAction"
     }
+    state.statxara="none"
     startTimer(2)
 }
 def ff() {
@@ -615,6 +634,7 @@ def ff() {
     catch (Exception e) {
         log.debug "Hit Exception $e on $hubAction"
     }
+    state.statxara="none"
     startTimer(2)
 }
 def playpause() {
@@ -636,6 +656,7 @@ def playpause() {
     catch (Exception e) {
         log.debug "Hit Exception $e on $hubAction"
     }
+    state.statxara="none"
     startTimer(2)
 }
 def previous() {
@@ -657,6 +678,7 @@ def previous() {
     catch (Exception e) {
         log.debug "Hit Exception $e on $hubAction"
     }
+    state.statxara="none"
     startTimer(2)
 }
 def next() {
@@ -678,6 +700,7 @@ def next() {
     catch (Exception e) {
         log.debug "Hit Exception $e on $hubAction"
     }
+    state.statxara="none"
     startTimer(2)
 }
 
