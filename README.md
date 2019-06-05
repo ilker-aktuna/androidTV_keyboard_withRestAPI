@@ -59,6 +59,7 @@ Amazon TV apk install instructions:
 "adb shell ime enable com.aktuna.tv.keyboard/com.aktuna.leanback.ime.LeanbackImeService"
 7. set my keyboard as default keyboard:
 "adb shell ime set com.aktuna.tv.keyboard/com.aktuna.leanback.ime.LeanbackImeService"
+
 *. To revert back to original keyboard:
 "adb shell ime set com.amazon.tv.ime/.FireTVIME"
 
