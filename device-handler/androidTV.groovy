@@ -194,9 +194,15 @@ def setstatus() {
         state.statxold=state.statx
         state.statx=state.statxara
 	} else {
-        state.statxold=state.statx
-		state.statx="off"
+        if (state.statx=="offtemp") {
+			state.statx="off"
+         }
+         else {
+        	state.statxold=state.statx
+         	state.statx="offtemp"
+         }
 	}
+    if (state.statx!="offtemp") {
     if (state.statx != state.statxold) {
     	//log.debug "old state: ${state.statxold}"
         //log.debug "new state: ${state.statx}"
@@ -208,6 +214,7 @@ def setstatus() {
     	else {
     		sendEvent(name: "presence", value: "not present")
     	}
+    }
     }
 }
 
@@ -259,7 +266,7 @@ def getstatus() {
         log.debug "Hit Exception $e on $hubAction"
     }
     state.statxara="none"
-    startTimer(2)
+    startTimer(3)
 }
 
 def youtube() {
