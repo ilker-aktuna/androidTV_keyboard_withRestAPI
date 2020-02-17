@@ -63,3 +63,16 @@ Amazon TV apk install instructions:
 *. To revert back to original keyboard:
 "adb shell ime set com.amazon.tv.ime/.FireTVIME"
 
+version 1.5 , 17.02.2020 added 2 new functions:
+
+1. /keycode
+example:
+/keycode=44
+or with keycode names like:
+/keycode=KEYCODE_P
+list of available keycodes are here:
+https://developer.android.com/reference/android/view/KeyEvent.html
+
+2. /sendtext
+example:
+/sendtext=test.me
